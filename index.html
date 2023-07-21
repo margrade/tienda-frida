@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <title>Frida Íntima - Gualeguaychú</title>
+    <link rel="shortcut icon" href="./imagenes/logo.jpeg.jpeg">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./imagenes/logo.jpeg.jpeg" alt="logo de empresa">
+        </div>
+        
+        <nav>
+            <a href="#sec1">Sobre la empresa</a>
+            <a href="#sec2">Nuestro equipo</a>
+            <a href="#sec3">Reclamos</a>
+            <a href="#sec4">Contactanos</a>
+        </nav>
+    </header>
+
+    <section id="sec1" class="section-container sec_1">
+        
+            <div class="carousel">
+                <div class="slides-container">
+                  <div class="slide">
+                    <img src="./imagenes/banner.png" alt="Imagen 1">
+                  </div>
+                  <div class="slide">
+                    <img src="./imagenes/banner 2.png" alt="Imagen 2">
+                  </div>
+                  <div class="slide">
+                    <img src="./imagenes/banner 3.png" alt="Imagen 3">
+                  </div>
+                </div>
+                <div class="prev-button">&lt;</div>
+                <div class="next-button">&gt;</div>
+            </div>
+    </section>
+
+    <section id="sec2" class="section-container sec_2">
+      
+      <div class="equipo">
+      <h2>Nuestro equipo</h2>
+      <h3 class="t-nosotras">En Frida Íntima contamos con un equipo de trabajo multidisciplinario, 
+        conformado por los departamentos de: marketing, ventas y contabilidad. 
+        Cada uno de estos departamentos es esencial para asegurar el éxito de nuestra empresa en el mercado.</h3>
+      </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="./imagenes/Bianca.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bianca Quiroga</h5>
+        <p class="card-text">Es la encargada de ventas, de realizar pago 
+          a proveedores y de los cierre de cajas de cada jornada.</p>
+        <a href="https://www.linkedin.com/in/bianca-quiroga-50195b238/" target="_blank" class="boton">Contacto</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./imagenes/mari.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Marisol Grade</h5>
+        <p class="card-text">Es la contadora de la empresa,
+          lleva todos los registros de la sociedad desde la apertura de la misma.</p>
+        <a href="https://www.linkedin.com/in/marisolgrade/" target="_blank" class="boton">Contacto</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./imagenes/martina.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Martina Angelico</h5>
+        <p class="card-text">Es la encargada de las publicaciones en redes sociales
+          y community manager</p>
+        <a href="https://www.linkedin.com/in/martina-ang%C3%A9lico-22738a210/" target="_blank" class="boton">Contacto</a>
+      </div>
+    </div>
+
+  </section>
+
+    <section id="sec3" class="section-container sec_3">
+      <h2  class="title">Formulario de reclamo</h2>
+      <h3 class="detalle_reclamo">Bienvenido/a a nuestra sección de reclamos. Este formulario ha sido creado para que usted pueda presentar un reclamo de manera formal y detallada, con el fin de resolver cualquier problema o inconveniente que haya experimentado en relación a un producto o servicio.</h3>
+      <form class="form" id="formularioProceso" method="post">
+        <div class="group">
+        <label for="nombreProceso">Nombre</label>
+        <input type="text" id="nombreProceso" name="nombreProceso">
+        </div>
+        <br>
+        <div class="group">
+        <label for="precio">Artículo que compró</label>
+        <input type="text" id="art" name="precio" placeholder="Ingrese el número del artículo">
+        </div>
+        <br>
+        <div class="group">
+        <label for="cantidad">¿Cuál es su reclamo?</label>
+        <textarea placeholder="" id="reclamo" name="cantidad" rows="5" required=""></textarea>
+        </div>
+        <button type="submit">Continuar</button>
+    </form>
+      
+       
+    </section>
+    <br>
+ 
+
+    <section id="sec4" class="section-container sec_4">
+      <h2 class="title1">Formulario de Contacto</h2>
+      <!--texto de bienvenida para el form -->
+      <h3 class="detallec">Bienvenido/a a nuestra sección de contacto. Si tiene alguna pregunta, 
+        comentario o sugerencia que le gustaría compartir con nosotros, 
+        por favor complete el siguiente formulario de contacto. 
+        Nos encantaría escuchar de usted y estamos comprometidos a responder 
+        tan pronto como nos sea posible. ¡Gracias por su interés en nuestra página!</h3>
+        <form class="form1"  id="formularioContacto">
+        <label class="cuadro" for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label class="cuadro" for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label class="cuadro" for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <br>
+        <input type="submit" value="Enviar">            
+    </form>
+    </section>
+    
+    <footer>
+
+        <div class="caja_footer contenido-container">
+            <h3 class="co">Contenido</h3>
+
+            <a href="#sec1">Sobre la empresa</a>
+            <a href="#sec2">Sobre nuestros empleados</a>
+            <a href="#sec3">Formulario de proceso</a>
+            <a href="#sec4">Contactanos</a>
+          </ul>
+          
+        </div>
+
+        <div class="div_map">
+          <h3>Ubicación</h3>
+          <iframe class="mapa-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.7835850006572!2d-58.514468525094195!3d-33.009480675063514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa82bba8f195d%3A0xd15e2c644dcadc4b!2s25%20de%20Mayo%20607%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1681565541869!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="caja_footer div-icono_container">
+            <div class="titulo_redes">
+            <h3>Redes</h3>
+            </div>
+            <div class="iconos_redes">
+            <a href="https://www.instagram.com/fridaintima_gualeguaychu/" target="_blank"><img class="icono-container inst"  src="./imagenes/instagram.svg" alt=""></a>
+            <!--<i class="fa-brands fa-instagram"></i>-->
+
+            <a href="https://www.facebook.com/people/Frida-Intima-Gualeguaychu/pfbid02giGUR8zU9PKyj2cZX5jC1yesRN1N8n145kSMAKUdzSWtxAfGdaKcfjQvuddso49gl/" target="_blank"><img class="icono-container face" src="./imagenes/facebook.svg" alt=""></a>
+            <!--<i class="fa-brands fa-facebook"></i>-->
+
+            </div>
+        </div>
+
+ 
+    </footer>
+
+    <div class="caja_footer copyright">
+        <h6>Todos los derechos reservados. Copyright 2023</h6>
+    </div>
+    
+</body>
+</html>
+<script src="./funciones.js"></script>
+
+
+
+
+
+
