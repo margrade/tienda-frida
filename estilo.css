@@ -1,0 +1,490 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #000;
+  }
+  
+  body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 0%, #FF9A8B 21%, #FF6A88 33%, #FF99AC 100%);
+  font-style: italic;
+  
+  
+  }
+  
+  header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .logo-container {
+    text-align: center;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+  }
+  
+  nav {
+    display: block; 
+  }
+  
+  nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #000;
+    font-weight: 600;
+    font-size: medium;
+    font-style: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+  }
+  nav a:hover{
+    color: #fb97ef;
+  }
+  
+  
+  
+  
+  .section-container{
+    width: 100%;
+    height: 700px;
+    
+  }
+  
+  
+  .sec_1
+  {
+    width: 100%;
+    height: 700px;
+    
+  }
+  
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slides-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide {
+    flex: 1 0 100%;
+    height: 100%;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .prev-button,
+  .next-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+   
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .prev-button {
+    left: 20px;
+  }
+  
+  .next-button {
+    right: 20px;
+  }
+  
+  .sec_2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 30px auto;
+  
+  
+  }
+  
+  .equipo {
+    height: 150px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-style: italic;
+    background-color: pink;
+    margin: 0 auto;
+    border-radius: 18px;
+    justify-content: center;
+    box-shadow: 2px 2px 25px black;
+  }
+  
+  .t-nosotras{
+    font-size: 20px;
+  }
+  
+  .card-body{
+    background-color: pink;
+  }
+  
+  .card {
+    box-shadow: 2px 2px 25px black;
+  }
+  
+  .presentacion-container{
+    width: 40%;
+    height: 230px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+  }
+  
+  .div-presen1-img img{
+    width: 150px;
+    height: 125px;
+    border: 5px solid green;
+  }
+  
+  
+  /*Tarjeta del formulario de reclamo*/
+  
+  .sec_3{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  max-height: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 15px black ;
+  }
+  
+  .title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  font-style: italic;
+  }
+  
+  .detalle_reclamo{
+  font-size: 12px;
+  font-weight: 600;
+  text-align:justify;
+  }
+  
+  
+  .form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .group {
+  position: relative;
+  }
+  
+  .form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+  }
+  
+  .form .group input,
+  .form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+  }
+  
+  /*FORMULARIO DE PROCESO*/
+  /* Aplicar fondo blanco al formulario */
+  #formularioProceso {
+  background-color: #fff;
+  padding: 20px; /* Añadir un poco de espacio alrededor del formulario */
+  }
+  
+  /* Estilizar los botones con fondo rosa */
+  button[type="submit"] {
+  background-color: pink;
+  color: #fff;
+  padding: 10px 20px; /* Añadir un poco de espacio dentro del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .boton {
+  background-color: hotpink;
+  color: #fff;
+  padding: 10px 20px; /* Añadir un poco de espacio dentro del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  }
+  
+  button[type="submit"]:hover {
+  background-color: hotpink; /* Cambiar el fondo cuando el usuario pase el ratón sobre el botón */
+  }
+  
+  /* Alinear los inputs uno debajo del otro */
+  #formularioProceso label,
+  #formularioProceso input {
+  display: block;
+  margin-bottom: 10px; /* Añadir un poco de espacio entre los inputs */
+  }
+  
+  
+  /* FORM de contacto */
+  
+  /* Config del título del formulario */
+  .sec_4{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:10px auto;
+    box-shadow: 2px 2px 25px black ;
+    }
+    .title1 {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      font-style: italic;
+      }
+      
+      .detallec{
+      font-size: 12px;
+      font-weight: 600;
+      text-align:justify;
+      }
+      
+      
+      .form1 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      }
+  
+  /* Config de la tarjeta */
+  .contacto {
+  
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  }
+  
+  .cuadro {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: rgb(250, 146, 163);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(255, 97, 123);
+  }
+  
+  
+  footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 270px;
+  margin-top: 50px;   
+  }
+  
+  .caja_footer{
+  width: 17%;
+  height: 100%;
+  }
+  
+  .caja_footer>a{
+  text-decoration: none;
+  color: #000;
+  margin: 5px;
+  }
+  
+  
+  .div_map{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  }
+  
+  .mapa-container{
+  width: 90%;
+  height: 60%;
+  
+  }
+  .mapa-container:hover { /*pone sombreado cuando pasas x arriba*/
+    box-shadow: 2px 2px 25px black;
+  }
+  
+  
+  .div-icono_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start
+  
+  }
+  .titulo_redes{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 20%;
+  width: 100%;
+  }
+  .titulo_redes>h3{
+  text-align: center;
+  margin-bottom: 20px;
+  
+  }
+  
+  .iconos_redes{
+  display: flex;
+  justify-content: space-evenly;
+  height: 30%;
+  width: 100%;
+  align-items:center;
+  }
+  
+  .inst:hover {
+    color: red;
+    filter: drop-shadow(5px 5px 10px black);
+  }
+  
+  .iconos_redes .face:hover {
+    color: blue;
+    filter: drop-shadow(5px 5px 10px black);
+  }
+  
+  
+  .div-icono_container a{
+    text-decoration: none;
+    text-align: start;
+    color: #000;
+  }
+  .icono-container{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    
+  }
+  
+  .contenido-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .co {
+    margin-bottom: 30px;
+  }
+  
+  .contenido-container>a:hover{
+    color: white;
+  }
+  
+  
+  
